@@ -1,0 +1,56 @@
+table {border: 2px solid #3c5983; padding: 5px; text-align:center; border-collapse: collapse; table-layout: fixed; table-layout: fixed;}
+body {background-image: linear-gradient(-100deg, #9ec2c7, #5193dd);}
+td {color:aliceblue; text-shadow: 2px 2px 3px #000; border: 2px solid #3c5983; font-size: 200%; font-family: sans-serif;}
+th {color:aliceblue; text-shadow: 2px 2px 3px #000; border: 2px solid #3c5983; font-size: 200%; font-family: sans-serif;}
+.zoom td {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    padding: 0;
+    vertical-align: top;
+}
+.zoom td div {
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3c5983;
+    box-sizing: border-box;
+    background: #5193dd;
+    transition: transform .6s ease .02s, z-index .01s, .6s linear;
+}
+.zoom td div:hover {
+    transform: scale(1.15);
+    z-index: 1;
+    background: #78b5fc;
+}
+.zoom th {
+    position: relative;
+    width: 200px;
+    height: 80px;
+    padding: 0;
+    vertical-align: top;
+}
+.zoom th div {
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #3c5983;
+    box-sizing: border-box;
+    background: #5193dd;
+    transition: transform .6s ease .02s, z-index .01s, .6s linear;
+}
+.zoom th div:hover {
+    transform: scale(1.15);
+    z-index: 1;
+    background: #78b5fc;
+}
+img.aboba {
+    transition: transform .6s ease .02s, z-index .01s, .6s linear;
+ }
+img.aboba:hover{
+    transform: translateX(+50px);
+ }
